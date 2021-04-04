@@ -2,7 +2,7 @@
 (async function(){
 
 
-	
+
 
 
 	let hooks = []
@@ -222,7 +222,7 @@ function h(nodeName, attrs, ...children){
 
 
 	function Home(){
-	let links = ["valegas"]
+	let links = ["bs"]
 
 	let ads = h('a', {}, )
 
