@@ -205,6 +205,7 @@ let root = null
 let oldNode = null
 
 const render = (vnode, parent)=>{
+	parent.innerHTML = ""
 	node = vnode
 	oldNode = vnode.nodeName()
 	diff(parent, oldNode)
@@ -220,14 +221,28 @@ function h(nodeName, attrs, ...children){
 
 // })
 
+function Sobre(){
+	return h("div", null, "sobre")
+}
+
 
 	function Home(){
-	let links = ["bs"]
+	let links = ["bs","hi"]
 
-	let ads = h('a', {}, )
+	let ads = h('a', {
+		href:"#"
+	}, "oi")
 
-	return h("div", null, ...links.map(x=> x))
+	return h("div", null, ...links.map(x=> h("a", {href:"#"+x}, x)))
 }
+
+window.onhashchange = function(){
+	let doc = location.hash
+	if(doc == "#bs"){
+		render(h(Sobre), document.querySelector("#root"))
+	}
+}
+
 render(h(Home), document.querySelector("#root"))
 
 	await require("https://www.gstatic.com/firebasejs/8.3.2/firebase-app", async function(){
