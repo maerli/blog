@@ -86,7 +86,7 @@ require("https://unpkg.com/react@17/umd/react.development.js");
 
 require("https://unpkg.com/react-dom@17/umd/react-dom.development.js", function(){
 
-var url = "https://cdn.jsdelivr.net/gh/maerli/blog/";
+var url = "https://cdn.jsdelivr.net/gh/maerli/blog@latest/";
 let file = location.hash.slice(2)
 if(file === "") file = "index";
 require(url+file+".js")
