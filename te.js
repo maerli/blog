@@ -13,7 +13,7 @@ className:"btn btn-success",
 onClick:()=>{
   setCount(count +1);
 }
-}, "contar");
+}, "contar de bovo");
 
 
 
