@@ -37,7 +37,7 @@ function click(msg){
  div( null, e("strong", null, "🏆 Vencedor 140 diamantes : ", winner2)))),
  
  e("h2",null, p[1]? ("Bem vindo, "+ p[1].toUpperCase()):""),
- div(null, e("ul", null, ["sorteio ocorrerá em 15 de agosto às 14:00.", "prêmios: 85 + 10% diamantes free fire e 140 +10% diamantes free fire."].map(a=> e("li", null, a)) )), 
+ div(null, e("ul", null, ["sorteio ocorrerá em 15 de agosto às 12:00.", "prêmios: 85 + 10% diamantes free fire e 140 +10% diamantes free fire."].map(a=> e("li", null, a)) )), 
  
  div(null, e("strong", null, "CONDIÇÕES"),
  e("p", null, "1 - Participará do sorteio o cliente que não tiver pendências financeiras com o revendedor(maerli)."),
