@@ -28,7 +28,7 @@ function click(msg){
 }
 
  return e("div", {className:"card", style:{textAlign:"justify",padding:10, backgroundColor:"rgba(0,0,20,0.01)"}}, 
- div({style:{}}, e("h1", null, "SORTEIO ",e("h1",{style:"color:red"},"ANTECIPADO PARA ")," : 15 DE AGOSTO")),
+ div({style:{}}, e("h1", null, "SORTEIO ",e("h1",{style:{color:"red"}},"ANTECIPADO PARA ")," : 15 DE AGOSTO")),
  
  div({className:"card"},
  div({className:"card-body"},
